@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Contact Us</div>
+    <div class="name">
+
+      <div class="first">
+        <label for="First">First Name *</label>
+        <input type="text" name="First" required>
+        <p class="error">this field is required</p>
+      </div>
+
+      <div class="last">
+        <label for="Last">Last Name *</label>
+        <input type="text" name="Last" required>
+        <p class="error">this field is required</p>
+      </div>
+      
+    </div>
+    <label for="email">Email Address *</label>
+    <input type="email" name="email" id="">
+    <p class="error">this field is required</p>
+
+    <div class="query">
+      <p>Query Type *</p>
+
+      <div class="querybuttons">
+        <label class="radio-container">
+          <input type="radio" name="query" value="general"  required>
+          <span class="checkmark1">General Enquiry</span>
+        </label>
+        <label class="radio-container">
+          <input type="radio" name="query" value="support" required>
+          <span class="checkmark1">Support Request</span>
+        </label>
+      </div>
+      <p class="error">this field is required</p>
+    </div>
+    
+    <label for="message">Message *</label>
+    <input type="text" name="message" class="message" required>
+    <p class="error">this field is required</p>
+
+    <div class="consent">
+      <label class="checkbox-container">
+        <input type="checkbox" name="check" class="check" required>
+        <span class="checkmark"></span>
+        I consent to being contacted by the team *
+      </label>
+      <p class="error">this field is required</p>
+    </div>
+    <button class="submit">Submit</button>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
